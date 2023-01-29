@@ -1,6 +1,6 @@
 const express  = require('express');
 const bodyParser = require('body-parser')
-const {PORT} = require('./config/config')
+const {PORT} = require('./config/server-config')
 const {sendBasicEmail} = require('./services/email-service')
 const setUpAndStartServer = ()=>{
  const app = express();
