@@ -19,7 +19,7 @@ module.exports = {
         type: Sequelize.STRING , allowNull :false 
       },
       status: {
-        type: Sequelize.ENUM, allowNull :false,values :['PENDING' , 'SUCCESS', 'FAILED']
+        type: Sequelize.ENUM, allowNull :false,values :['PENDING' , 'SUCCESS', 'FAILED'] ,defaultValue : 'PENDING'
       },
       notificationTime: {
         type: Sequelize.DATE , allowNull : false 
